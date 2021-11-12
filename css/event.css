@@ -1,0 +1,103 @@
+.event__text{
+	font-family: Gilroy;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 21px;
+	margin-top: 24px;
+}
+
+.event__menu{
+	margin-top: 55px;
+}
+
+.event__event{
+	font-family: Gilroy;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 22px;
+	line-height: 26px;
+	width: 363px;
+	text-align: center;
+	color: #fff;
+	margin-right: 106px;
+	cursor: pointer;
+}
+
+.event__history{
+	font-family: Gilroy;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 22px;
+	line-height: 26px;
+	width: 363px;
+	text-align: center;
+	color: #0E8F94;
+	margin-right: 106px;
+	cursor: pointer;
+}
+
+.event__create{
+	font-family: Gilroy;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 22px;
+	line-height: 26px;
+	width: 363px;
+	text-align: center;
+	color: #0E8F94;
+	cursor: pointer;
+}
+
+.event__line{
+	background: #fff;
+	width: 363px;
+	height: 1px;
+	margin-top: 13px;
+	border:0px;
+	display: none;
+}
+
+.event__line_block{
+	display: block;
+}
+
+.redact{
+	cursor: pointer;
+}
+
+.redact__text_green{
+	color: #0E8F94;
+	cursor: pointer;
+}
+
+
+.event__block_two{
+	display: none;
+}
+
+.event__block_three{
+	display: none;
+}
+
+.editing__text_width{
+	width: 100%;
+}
+
+.editing__block_margin{
+	margin-top: 45px;
+}
+
+.editing__text_height{
+	height: 124px;
+}
+
+.event__btn_center{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.editing__center_margin{
+	margin-top: 40px;
+}

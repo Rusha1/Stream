@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Редактирование</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/editing.css">
+	<link rel="stylesheet" type="text/css" href="css/adaptation.css">
+
+	<!-- JS, Popper.js, and jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+
+<header class="menu">
+	<div class="container">
+		<div class="row row__center col__1920">
+			<img class="menu__burger menu__320" src="img/index/27.svg"></img>
+			<img class="menu__close menu__320_close" src="img/index/28.svg"></img>
+			<a class="menu__logo" href="index.html">BUSKER</a>
+			<div class="menu__serch_320 menu__320"><img class="menu__imgsearch" src="img/index/25.svg"></div>
+			<div class="menu__texttime">Время: </div>
+			<div class="menu__time">13:02:29</div>
+			<div class="menu__search">
+				<a class="menu__filter" href="#">
+					<img class="menu__imgfilter" src="img/index/24.svg">
+					<div class="menu__textfilter">Фильтр</div>
+				</a>
+
+				<form class="menu__form">
+				  <input class="menu__input" type="text" placeholder="Поиск">
+				  <button class="menu__btn" type="submit"><img class="menu__imgsearch" src="img/index/25.svg"></button>
+				</form></div>
+			<div class="menu__login">Вход</div>
+			<div class="menu__registration">Регистрация</div>
+
+			<div class="modalmob">
+				<div class="row flex__direction_column">
+					<div class="modalmob__times">
+						<div class="modalmob__text">Время:</div>
+						<div class="modalmob__time">13:02:29</div>
+					</div>
+					<div class="modalmob__btns">
+						<div class="modalmob__login modalmob__btn">Вход</div>
+						<div class="modalmob__reg modalmob__btn">Регистрация</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal">
+				<img class="modal__close" src="img/index/26.svg"></img>
+				<div class="modal__content">
+					<div class="modal__reg">
+						<div>Регистрация</div>
+						<div class="modal__line modal__line_one"></div>
+					</div>
+					<div class="modal__login">
+						<div>Вход</div>
+						<div class="modal__line modal__line_two"></div>
+					</div>
+				</div>
+
+				<div class="modal__regblock">
+
+					<div class="modal__inputs">
+						<div class="modal__blockname">
+							<div class="modal__title">Имя</div>
+							<input class="modal__input" type="text" placeholder="Имя"></input>
+						</div>
+						<div class="modal__blocksurname">
+							<div class="modal__title">Фамилия</div>
+							<input class="modal__input" type="text" placeholder="Фамилия"></input>
+						</div>
+					</div>
+
+					<div class="modal__inputs">
+						<div class="modal__blockname">
+							<div class="modal__title">Псевдоним</div>
+							<input class="modal__input" type="text" placeholder="Псевдоним"></input>
+						</div>
+						<div class="modal__blocksurname">
+							<div class="modal__title">Фото</div>
+							<div class="row">
+								<input class="modal__input modal__input_none" id="modal__input" type="file" placeholder="Фото"></input>
+								<label class="modal__input modal__input_pointer" for="modal__input"><div class="modal__photo">Выбрать</div></label>
+							</div>
+						</div>
+					</div>
+
+					<div class="modal__inputs">
+						<div class="modal__blockname">
+							<div class="modal__title">Телефон</div>
+							<input class="modal__input" type="tel" placeholder="79991334455"></input>
+						</div>
+						<div class="modal__blocksurname">
+							<div class="modal__title">Почта</div>
+							<input class="modal__input" type="e-mail" placeholder="mail@gmail.com"></input>
+						</div>
+					</div>
+
+					<div class="modal__inputs">
+						<div class="modal__blockname">
+							<div class="modal__title">Пароль</div>
+							<input class="modal__input" type="password" placeholder="Пароль"></input>
+						</div>
+						<div class="modal__blocksurname">
+							<div class="modal__title">Подтвердите пароль</div>
+							<input class="modal__input" type="password" placeholder="Подтвердите пароль"></input>
+						</div>
+					</div>
+
+					<div class="modal__button">
+						<a class="modal__btn" href="event.html">Регистрация</a>
+					</div>
+
+				</div>
+
+				<div class="modal__loginblock">
+
+					<div class="modal__inputs">
+						<div class="modal__blockname">
+							<div class="modal__title">Почта</div>
+							<input class="modal__input" type="e-mail" placeholder="email@gmail.com"></input>
+						</div>
+						<div class="modal__blocksurname">
+							<div class="modal__title">Пароль</div>
+							<input class="modal__input" type="password" placeholder="Пароль"></input>
+						</div>
+					</div>
+
+					<div class="modal__button">
+						<a class="modal__btn" href="profile.html">Вход</a>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+
+		<div class="modalmobtwo">
+
+			<div class="row justify__content_flex_end">
+				<img class="modalmobtwo__img" src="img/index/30.svg">
+			</div>
+
+			<div class="row modalmobtwo_space_around">
+
+				<div class="modalmobtwo__reg">
+					<div class="modalmobtwo__title modalmobtwo__title_one">Регистрация</div>
+					<div class="modalmobtwo__line modalmobtwo__line_one"></div>
+				</div>
+
+				<div class="modalmobtwo__log">
+					<div class="modalmobtwo__title modalmobtwo__title_two">Вход</div>
+					<div></div>
+					<div class="modalmobtwo__line modalmobtwo__line_two"></div>
+				</div>
+			</div>
+
+			<div class="modalmobtwo__content modalmobtwo__contentreg">
+				<div class="modalmobtwo__blockname">
+					<div class="modalmobtwo__title">Имя</div>
+					<input class="modalmobtwo__input" type="text" placeholder="Имя">	
+				</div>
+				<div class="modalmobtwo__blockname">
+					<div class="modalmobtwo__title">Фамилия</div>
+					<input class="modalmobtwo__input" type="text" placeholder="Фамилия">	
+				</div>
+				<div class="modalmobtwo__blockname">
+					<div class="modalmobtwo__title">Псевдоним</div>
+					<input class="modalmobtwo__input" type="text" placeholder="Псевдоним">	
+				</div>
+				<div class="modalmobtwo__blockname">
+					<div class="modalmobtwo__title">Фото</div>
+					<input class="modalmobtwo__input" type="text" placeholder="Выбрать">	
+				</div>
+				<div class="modalmobtwo__blockname">
+					<div class="modalmobtwo__title">Телефон</div>
+					<input class="modalmobtwo__input" type="tel" placeholder="Имя">	
+				</div>
+				<div class="modalmobtwo__blockname">
+					<div class="modalmobtwo__title">Почта</div>
+					<input class="modalmobtwo__input" type="e-mail" placeholder="name@gmail.com">	
+				</div>
+				<div class="modalmobtwo__blockname">
+					<div class="modalmobtwo__title">Пароль</div>
+					<input class="modalmobtwo__input" type="password" placeholder="* * * * *">	
+				</div>
+				<div class="modalmobtwo__blockname">
+					<div class="modalmobtwo__title">Повторить пароль</div>
+					<input class="modalmobtwo__input" type="password" placeholder="* * * * *">	
+				</div>
+				<div class="modalmobtwo__blockname">
+					<button class="modalmobtwo__btn">Регистрация</button>	
+				</div>
+
+				<div class="modalmobtwo__margin">
+				</div>
+			</div>
+
+			<div class="modalmobtwo__content modalmobtwo__contentlogin">
+				<div class="modalmobtwo__blockname">
+					<div class="modalmobtwo__title">Почта</div>
+					<input class="modalmobtwo__input" type="e-mail" placeholder="name@gmail.com">	
+				</div>
+				<div class="modalmobtwo__blockname">
+					<div class="modalmobtwo__title">Пароль</div>
+					<input class="modalmobtwo__input" type="password" placeholder="* * * * *">	
+				</div>
+				<div class="modalmobtwo__blockname">
+					<button class="modalmobtwo__btn">Войти</button>	
+				</div>
+
+				<div class="modalmobtwo__margin">
+				</div>
+			</div>
+		</div>
+
+		<div class="filtermob">
+
+			<div class="row filtermob__inf">
+				<div class="filtermob__title_genre" >
+					<div class="filtermob__title">По жанру:</div>
+					<div class="filtermob__line"></div>
+				</div>
+				<div class="filtermob__title_date">
+					<div class="filtermob__title">По дате:
+					<div class="filtermob__line"></div></div>	
+				</div>
+			</div>
+
+			<div class="row filtermob__inf">
+				<div class="filtermob__genre">
+					<div class="filtermob__genres">
+						<input class="filtermob__checkbox" type="checkbox" name="">
+						<div class="filtermob__text"> Авангардская</div>
+					</div>
+					<div class="filtermob__genres">
+						<input class="filtermob__checkbox" type="checkbox" name="">
+						<div class="filtermob__text"> Акапелла</div>
+					</div>
+					<div class="filtermob__genres">
+						<input class="filtermob__checkbox" type="checkbox" name="">
+						<div class="filtermob__text"> Арабеска</div>
+					</div>
+					<div class="filtermob__genres">
+						<input class="filtermob__checkbox" type="checkbox" name="">
+						<div class="filtermob__text"> Арт</div>
+					</div>
+					<div class="filtermob__genres">
+						<input class="filtermob__checkbox" type="checkbox" name="">
+						<div class="filtermob__text"> Бард</div>
+					</div>
+					<div class="filtermob__genres">
+						<input class="filtermob__checkbox" type="checkbox" name="">
+						<div class="filtermob__text"> Блюз</div>
+					</div>
+					<div class="filtermob__genres">
+						<input class="filtermob__checkbox" type="checkbox" name="">
+						<div class="filtermob__text"> Битпоп</div>
+					</div>
+					<div class="filtermob__genres">
+						<input class="filtermob__checkbox" type="checkbox" name="">
+						<div class="filtermob__text"> Блюз</div>
+					</div>
+					<div class="filtermob__genres">
+						<input class="filtermob__checkbox" type="checkbox" name="">
+						<div class="filtermob__text"> Авангардская</div>
+					</div>
+					<div class="filtermob__genres">
+						<input class="filtermob__checkbox" type="checkbox" name="">
+						<div class="filtermob__text"> Авангардская</div>
+					</div>
+					<div class="filtermob__genres">
+						<input class="filtermob__checkbox" type="checkbox" name="">
+						<div class="filtermob__text"> Авангардская</div>
+					</div>
+					<div class="filtermob__genres">
+						<input class="filtermob__checkbox" type="checkbox" name="">
+						<div class="filtermob__text"> Авангардская</div>
+					</div>
+				</div>
+
+				<div class="filtermobs__date">
+					<div class="filtermob__dates">
+						<div class="filtermob__genres">
+							<div class="filtermob__text filtermob__text_320"> День</div>
+						</div>
+						<div class="filtermob__genres">
+							<div class="filtermob__text filtermob__text_320"> Месяц</div>
+						</div>
+						<div class="filtermob__genres">
+							<div class="filtermob__text filtermob__text_320"> Год</div>
+						</div>
+					</div>
+					<div class="filtermob__inputs">
+						<input type="text" name="" class="filtermob__input" placeholder="12">
+						<input type="text" name="" class="filtermob__input" placeholder="03">
+						<input type="text" name="" class="filtermob__input" placeholder="2020">
+					</div>
+				</div>
+
+			</div>
+
+
+		</div>
+
+		<div class="filter">
+			<div class="row">
+
+				<div class="filter__title_width filter__title_genre" >
+					<div class="filter__title">По жанру</div>
+					<div class="filter__line"></div>
+				</div>
+
+				<div class="filter__title_width filter__title_date">
+					<div class="filter__title">По дате</div>
+					<div class="filter__line"></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="filter__genre">
+					<div class="filter__genres">
+						<input type="checkbox" name="" class="filter__checkbox">
+						<div class="filter__text"> Авангардская</div>
+					</div>
+					<div class="filter__genres">
+						<input type="checkbox" name="" class="filter__checkbox">
+						<div class="filter__text"> Акапелла</div>
+					</div>
+					<div class="filter__genres">
+						<input type="checkbox" name="" class="filter__checkbox">
+						<div class="filter__text"> Арабеска</div>
+					</div>
+					<div class="filter__genres">
+						<input type="checkbox" name="" class="filter__checkbox">
+						<div class="filter__text"> Арт</div>
+					</div>
+					<div class="filter__genres">
+						<input type="checkbox" name="" class="filter__checkbox">
+						<div class="filter__text"> Бард</div>
+					</div>
+					<div class="filter__genres">
+						<input type="checkbox" name="" class="filter__checkbox">
+						<div class="filter__text"> Битпоп</div>
+					</div>
+					<div class="filter__genres">
+						<input type="checkbox" name="" class="filter__checkbox">
+						<div class="filter__text"> Блюз</div>
+					</div>
+					<div class="filter__genres">
+						<input type="checkbox" name="" class="filter__checkbox">
+						<div class="filter__text"> Авангардская</div>
+					</div>
+					<div class="filter__genres">
+						<input type="checkbox" name="" class="filter__checkbox">
+						<div class="filter__text"> Авангардская</div>
+					</div>
+					<div class="filter__genres">
+						<input type="checkbox" name="" class="filter__checkbox">
+						<div class="filter__text"> Авангардская</div>
+					</div>
+					<div class="filter__genres">
+						<input type="checkbox" name="" class="filter__checkbox">
+						<div class="filter__text"> Авангардская</div>
+					</div>
+					<div class="filter__genres">
+						<input type="checkbox" name="" class="filter__checkbox">
+						<div class="filter__text"> Авангардская</div>
+					</div>
+					<div class="filter__genres">
+						<input type="checkbox" name="" class="filter__checkbox">
+						<div class="filter__text"> Авангардская</div>
+					</div>
+					<div class="filter__genres">
+						<input type="checkbox" name="" class="filter__checkbox">
+						<div class="filter__text"> Авангардская</div>
+					</div>
+					<div class="filter__genres">
+						<input type="checkbox" name="" class="filter__checkbox">
+						<div class="filter__text"> Авангардская</div>
+					</div>
+				</div>
+
+				<div class="filter__date">
+
+					<div class="filter__dates">
+						<div class="filter__genres">
+							<div class="filter__text"> День</div>
+						</div>
+						<div class="filter__genres">
+							<div class="filter__text"> Месяц</div>
+						</div>
+						<div class="filter__genres">
+							<div class="filter__text"> Год</div>
+						</div>
+					</div>
+
+					<div class="filter__inputs">
+						<input type="text" name="" class="filter__input" placeholder="12">
+						<input type="text" name="" class="filter__input" placeholder="03">
+						<input type="text" name="" class="filter__input" placeholder="2020">
+					</div>
+					
+				</div>	
+			</div>	
+		</div>
+
+	</div>
+</header>
+
+<div class="editing">
+	<div class="container">
+		<div class="row justify__space_between">
+			<div class="editing__one">
+				<img class="editing__img" src="img/editing/1.png"></img>
+				<div class="editing__greet">
+					<div class="editing__welcome">Добро пожаловать Ольга!</div>
+					<div class="redact">
+						<div class="redact__text">Редактировать профиль</div>
+						<img class="redact__svg" src="img/editing/6.svg"></img>
+					</div>
+				</div>
+			</div>
+
+			<div class="editing__two">
+				<div class="editing__rat">
+					<div class="editing__rattext">9.8</div>
+					<img class="editing__ratimg" src="img/editing/5.svg"></img>
+				</div>
+				<div class="replenish">
+					<img class="replenish__img" src="img/editing/4.svg"></img>
+					<input class="replenish__text" type="text" placeholder="32 800. 55"></input>
+					<div class="replenish__btn">
+						<img class="replenish__plus" src="img/editing/2.svg"></img>
+					</div>
+				</div>
+
+				<div class="editing__wallet"><img src="img/editing/3.svg"></div>
+			</div>
+		</div>
+		<div class="editing__three">
+				<div class="editing__subscribers">
+					<div class="editing__sub">Подписки</div>
+					<div class="editing__subnum">16</div>
+				</div>
+				<div class="editing__subscriptions">
+					<div class="editing__sub">Подписчики</div>
+					<div class="editing__subnum">472</div>
+				</div>
+			</div>
+
+		<div class="editing__margin_1920">
+			<div class="editing__about editing_margin">
+				<div class="editing__title">Информация об акаунте</div>
+				<div class="ddd">
+					<textarea class="editing__textabout" placeholder="Введите текст..."></textarea>
+				</div>
+			</div>	
+
+			<div class="editing__inlet editing_margin">
+				<div class="editing__block">
+					<div class="editing__title">Имя</div>
+					<input class="editing__text" type="text" name="" placeholder="Ольга">
+				</div>
+
+				<div class="editing__block">
+					<div class="editing__title">Фамилия</div>
+					<input class="editing__text" type="text" name="" placeholder="Никитина">
+				</div>
+			</div>
+
+			<div class="editing__inlet editing_margin">
+				<div class="editing__block">
+					<div class="editing__title">Телефон</div>
+					<input class="editing__text" type="text" name="" placeholder="+7 (937) 333 33 33">
+				</div>
+
+				<div class="editing__block">
+					<div class="editing__title">Почта</div>
+					<input class="editing__text" type="text" name="" placeholder="olga.subleg@yandex.ru">
+				</div>
+			</div>
+
+			<div class="editing__inlet editing_margin">
+				<div class="editing__block">
+					<div class="editing__title">Фото</div>
+					<div class="row">
+						<input class="editing__text editing__file" type="file" id="file" placeholder="Выбрать" >
+						<label class="editing__label" for="file"><div class="editing__label_border">Выбрать</div></label>
+					</div>
+				</div>
+
+				<div class="editing__block">
+					<div class="editing__title">Пароль</div>
+					<input class="editing__text" type="password" name="" placeholder="* * * * * *">
+				</div>
+			</div>
+
+			<div class="editing__center">
+				<a class="editing__save" href="event.html">Сохранить изменения</a>
+			</div>
+		</div>
+
+	</div>
+
+
+
+</div>
+
+<script type="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>

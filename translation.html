@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Мероприятие</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/translation.css">
+	<link rel="stylesheet" type="text/css" href="css/adaptation.css">
+
+	<!-- JS, Popper.js, and jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<header class="menu">
+	<div class="container">
+		<div class="row row__center col__1920">
+			<img class="menu__burger menu__320" src="img/index/27.svg"></img>
+			<img class="menu__close menu__320_close" src="img/index/28.svg"></img>
+			<a class="menu__logo" href="index.html">BUSKER</a>
+			<div class="menu__serch_320 menu__320"><img class="menu__imgsearch" src="img/index/25.svg"></div>
+			<div class="menu__texttime">Время: </div>
+			<div class="menu__time">13:02:29</div>
+			<div class="menu__search">
+				<a class="menu__filter" href="#">
+					<img class="menu__imgfilter" src="img/index/24.svg">
+					<div class="menu__textfilter">Фильтр</div>
+				</a>
+
+				<form class="menu__form">
+				  <input class="menu__input" type="text" placeholder="Поиск">
+				  <button class="menu__btn" type="submit"><img class="menu__imgsearch" src="img/index/25.svg"></button>
+				</form></div>
+			<div class="menu__login">Вход</div>
+			<div class="menu__registration">Регистрация</div>
+
+			<div class="modalmob">
+				<div class="row flex__direction_column">
+					<div class="modalmob__times">
+						<div class="modalmob__text">Время:</div>
+						<div class="modalmob__time">13:02:29</div>
+					</div>
+					<div class="modalmob__btns">
+						<div class="modalmob__login modalmob__btn">Вход</div>
+						<div class="modalmob__reg modalmob__btn">Регистрация</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal">
+				<img class="modal__close" src="img/index/26.svg"></img>
+				<div class="modal__content">
+					<div class="modal__reg">
+						<div>Регистрация</div>
+						<div class="modal__line modal__line_one"></div>
+					</div>
+					<div class="modal__login">
+						<div>Вход</div>
+						<div class="modal__line modal__line_two"></div>
+					</div>
+				</div>
+
+				<div class="modal__regblock">
+
+					<div class="modal__inputs">
+						<div class="modal__blockname">
+							<div class="modal__title">Имя</div>
+							<input class="modal__input" type="text" placeholder="Имя"></input>
+						</div>
+						<div class="modal__blocksurname">
+							<div class="modal__title">Фамилия</div>
+							<input class="modal__input" type="text" placeholder="Фамилия"></input>
+						</div>
+					</div>
+
+					<div class="modal__inputs">
+						<div class="modal__blockname">
+							<div class="modal__title">Псевдоним</div>
+							<input class="modal__input" type="text" placeholder="Псевдоним"></input>
+						</div>
+						<div class="modal__blocksurname">
+							<div class="modal__title">Фото</div>
+							<div class="row">
+								<input class="modal__input modal__input_none" id="modal__input" type="file" placeholder="Фото"></input>
+								<label class="modal__input modal__input_pointer" for="modal__input"><div class="modal__photo">Выбрать</div></label>
+							</div>
+						</div>
+					</div>
+
+					<div class="modal__inputs">
+						<div class="modal__blockname">
+							<div class="modal__title">Телефон</div>
+							<input class="modal__input" type="tel" placeholder="79991334455"></input>
+						</div>
+						<div class="modal__blocksurname">
+							<div class="modal__title">Почта</div>
+							<input class="modal__input" type="e-mail" placeholder="mail@gmail.com"></input>
+						</div>
+					</div>
+
+					<div class="modal__inputs">
+						<div class="modal__blockname">
+							<div class="modal__title">Пароль</div>
+							<input class="modal__input" type="password" placeholder="Пароль"></input>
+						</div>
+						<div class="modal__blocksurname">
+							<div class="modal__title">Подтвердите пароль</div>
+							<input class="modal__input" type="password" placeholder="Подтвердите пароль"></input>
+						</div>
+					</div>
+
+					<div class="modal__button">
+						<a class="modal__btn" href="event.html">Регистрация</a>
+					</div>
+
+				</div>
+
+				<div class="modal__loginblock">
+
+					<div class="modal__inputs">
+						<div class="modal__blockname">
+							<div class="modal__title">Почта</div>
+							<input class="modal__input" type="e-mail" placeholder="email@gmail.com"></input>
+						</div>
+						<div class="modal__blocksurname">
+							<div class="modal__title">Пароль</div>
+							<input class="modal__input" type="password" placeholder="Пароль"></input>
+						</div>
+					</div>
+
+					<div class="modal__button">
+						<a class="modal__btn" href="profile.html">Вход</a>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+
+		<div class="modalmobtwo">
+
+			<div class="row justify__content_flex_end">
+				<img class="modalmobtwo__img" src="img/index/30.svg">
+			</div>
+
+			<div class="row modalmobtwo_space_around">
+
+				<div class="modalmobtwo__reg">
+					<div class="modalmobtwo__title modalmobtwo__title_one">Регистрация</div>
+					<div class="modalmobtwo__line modalmobtwo__line_one"></div>
+				</div>
+
+				<div class="modalmobtwo__log">
+					<div class="modalmobtwo__title modalmobtwo__title_two">Вход</div>
+					<div></div>
+					<div class="modalmobtwo__line modalmobtwo__line_two"></div>
+				</div>
+			</div>
+
+			<div class="modalmobtwo__content modalmobtwo__contentreg">
+				<div class="modalmobtwo__blockname">
+					<div class="modalmobtwo__title">Имя</div>
+					<input class="modalmobtwo__input" type="text" placeholder="Имя">	
+				</div>
+				<div class="modalmobtwo__blockname">
+					<div class="modalmobtwo__title">Фамилия</div>
+					<input class="modalmobtwo__input" type="text" placeholder="Фамилия">	
+				</div>
+				<div class="modalmobtwo__blockname">
+					<div class="modalmobtwo__title">Псевдоним</div>
+					<input class="modalmobtwo__input" type="text" placeholder="Псевдоним">	
+				</div>
+				<div class="modalmobtwo__blockname">
+					<div class="modalmobtwo__title">Фото</div>
+					<input class="modalmobtwo__input" type="text" placeholder="Выбрать">	
+				</div>
+				<div class="modalmobtwo__blockname">
+					<div class="modalmobtwo__title">Телефон</div>
+					<input class="modalmobtwo__input" type="tel" placeholder="Имя">	
+				</div>
+				<div class="modalmobtwo__blockname">
+					<div class="modalmobtwo__title">Почта</div>
+					<input class="modalmobtwo__input" type="e-mail" placeholder="name@gmail.com">	
+				</div>
+				<div class="modalmobtwo__blockname">
+					<div class="modalmobtwo__title">Пароль</div>
+					<input class="modalmobtwo__input" type="password" placeholder="* * * * *">	
+				</div>
+				<div class="modalmobtwo__blockname">
+					<div class="modalmobtwo__title">Повторить пароль</div>
+					<input class="modalmobtwo__input" type="password" placeholder="* * * * *">	
+				</div>
+				<div class="modalmobtwo__blockname">
+					<button class="modalmobtwo__btn">Регистрация</button>	
+				</div>
+
+				<div class="modalmobtwo__margin">
+				</div>
+			</div>
+
+			<div class="modalmobtwo__content modalmobtwo__contentlogin">
+				<div class="modalmobtwo__blockname">
+					<div class="modalmobtwo__title">Почта</div>
+					<input class="modalmobtwo__input" type="e-mail" placeholder="name@gmail.com">	
+				</div>
+				<div class="modalmobtwo__blockname">
+					<div class="modalmobtwo__title">Пароль</div>
+					<input class="modalmobtwo__input" type="password" placeholder="* * * * *">	
+				</div>
+				<div class="modalmobtwo__blockname">
+					<button class="modalmobtwo__btn">Войти</button>	
+				</div>
+
+				<div class="modalmobtwo__margin">
+				</div>
+			</div>
+		</div>
+
+		<div class="filtermob">
+
+			<div class="row filtermob__inf">
+				<div class="filtermob__title_genre" >
+					<div class="filtermob__title">По жанру:</div>
+					<div class="filtermob__line"></div>
+				</div>
+				<div class="filtermob__title_date">
+					<div class="filtermob__title">По дате:
+					<div class="filtermob__line"></div></div>	
+				</div>
+			</div>
+
+			<div class="row filtermob__inf">
+				<div class="filtermob__genre">
+					<div class="filtermob__genres">
+						<input class="filtermob__checkbox" type="checkbox" name="">
+						<div class="filtermob__text"> Авангардская</div>
+					</div>
+					<div class="filtermob__genres">
+						<input class="filtermob__checkbox" type="checkbox" name="">
+						<div class="filtermob__text"> Акапелла</div>
+					</div>
+					<div class="filtermob__genres">
+						<input class="filtermob__checkbox" type="checkbox" name="">
+						<div class="filtermob__text"> Арабеска</div>
+					</div>
+					<div class="filtermob__genres">
+						<input class="filtermob__checkbox" type="checkbox" name="">
+						<div class="filtermob__text"> Арт</div>
+					</div>
+					<div class="filtermob__genres">
+						<input class="filtermob__checkbox" type="checkbox" name="">
+						<div class="filtermob__text"> Бард</div>
+					</div>
+					<div class="filtermob__genres">
+						<input class="filtermob__checkbox" type="checkbox" name="">
+						<div class="filtermob__text"> Блюз</div>
+					</div>
+					<div class="filtermob__genres">
+						<input class="filtermob__checkbox" type="checkbox" name="">
+						<div class="filtermob__text"> Битпоп</div>
+					</div>
+					<div class="filtermob__genres">
+						<input class="filtermob__checkbox" type="checkbox" name="">
+						<div class="filtermob__text"> Блюз</div>
+					</div>
+					<div class="filtermob__genres">
+						<input class="filtermob__checkbox" type="checkbox" name="">
+						<div class="filtermob__text"> Авангардская</div>
+					</div>
+					<div class="filtermob__genres">
+						<input class="filtermob__checkbox" type="checkbox" name="">
+						<div class="filtermob__text"> Авангардская</div>
+					</div>
+					<div class="filtermob__genres">
+						<input class="filtermob__checkbox" type="checkbox" name="">
+						<div class="filtermob__text"> Авангардская</div>
+					</div>
+					<div class="filtermob__genres">
+						<input class="filtermob__checkbox" type="checkbox" name="">
+						<div class="filtermob__text"> Авангардская</div>
+					</div>
+				</div>
+
+				<div class="filtermobs__date">
+					<div class="filtermob__dates">
+						<div class="filtermob__genres">
+							<div class="filtermob__text filtermob__text_320"> День</div>
+						</div>
+						<div class="filtermob__genres">
+							<div class="filtermob__text filtermob__text_320"> Месяц</div>
+						</div>
+						<div class="filtermob__genres">
+							<div class="filtermob__text filtermob__text_320"> Год</div>
+						</div>
+					</div>
+					<div class="filtermob__inputs">
+						<input type="text" name="" class="filtermob__input" placeholder="12">
+						<input type="text" name="" class="filtermob__input" placeholder="03">
+						<input type="text" name="" class="filtermob__input" placeholder="2020">
+					</div>
+				</div>
+
+			</div>
+
+
+		</div>
+
+		<div class="filter">
+			<div class="row">
+
+				<div class="filter__title_width filter__title_genre" >
+					<div class="filter__title">По жанру</div>
+					<div class="filter__line"></div>
+				</div>
+
+				<div class="filter__title_width filter__title_date">
+					<div class="filter__title">По дате</div>
+					<div class="filter__line"></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="filter__genre">
+					<div class="filter__genres">
+						<input type="checkbox" name="" class="filter__checkbox">
+						<div class="filter__text"> Авангардская</div>
+					</div>
+					<div class="filter__genres">
+						<input type="checkbox" name="" class="filter__checkbox">
+						<div class="filter__text"> Акапелла</div>
+					</div>
+					<div class="filter__genres">
+						<input type="checkbox" name="" class="filter__checkbox">
+						<div class="filter__text"> Арабеска</div>
+					</div>
+					<div class="filter__genres">
+						<input type="checkbox" name="" class="filter__checkbox">
+						<div class="filter__text"> Арт</div>
+					</div>
+					<div class="filter__genres">
+						<input type="checkbox" name="" class="filter__checkbox">
+						<div class="filter__text"> Бард</div>
+					</div>
+					<div class="filter__genres">
+						<input type="checkbox" name="" class="filter__checkbox">
+						<div class="filter__text"> Битпоп</div>
+					</div>
+					<div class="filter__genres">
+						<input type="checkbox" name="" class="filter__checkbox">
+						<div class="filter__text"> Блюз</div>
+					</div>
+					<div class="filter__genres">
+						<input type="checkbox" name="" class="filter__checkbox">
+						<div class="filter__text"> Авангардская</div>
+					</div>
+					<div class="filter__genres">
+						<input type="checkbox" name="" class="filter__checkbox">
+						<div class="filter__text"> Авангардская</div>
+					</div>
+					<div class="filter__genres">
+						<input type="checkbox" name="" class="filter__checkbox">
+						<div class="filter__text"> Авангардская</div>
+					</div>
+					<div class="filter__genres">
+						<input type="checkbox" name="" class="filter__checkbox">
+						<div class="filter__text"> Авангардская</div>
+					</div>
+					<div class="filter__genres">
+						<input type="checkbox" name="" class="filter__checkbox">
+						<div class="filter__text"> Авангардская</div>
+					</div>
+					<div class="filter__genres">
+						<input type="checkbox" name="" class="filter__checkbox">
+						<div class="filter__text"> Авангардская</div>
+					</div>
+					<div class="filter__genres">
+						<input type="checkbox" name="" class="filter__checkbox">
+						<div class="filter__text"> Авангардская</div>
+					</div>
+					<div class="filter__genres">
+						<input type="checkbox" name="" class="filter__checkbox">
+						<div class="filter__text"> Авангардская</div>
+					</div>
+				</div>
+
+				<div class="filter__date">
+
+					<div class="filter__dates">
+						<div class="filter__genres">
+							<div class="filter__text"> День</div>
+						</div>
+						<div class="filter__genres">
+							<div class="filter__text"> Месяц</div>
+						</div>
+						<div class="filter__genres">
+							<div class="filter__text"> Год</div>
+						</div>
+					</div>
+
+					<div class="filter__inputs">
+						<input type="text" name="" class="filter__input" placeholder="12">
+						<input type="text" name="" class="filter__input" placeholder="03">
+						<input type="text" name="" class="filter__input" placeholder="2020">
+					</div>
+					
+				</div>	
+			</div>	
+		</div>
+
+	</div>
+</header>
+
+<div class="translation">
+	<div class="container">
+		<div class="row flex__column_768 flex__column_320">
+			<div class="translation__inf">
+				<div class="translation__information">
+					<img class="translation__img" src="img/translation/1.png"></img>
+					<div class="translation__text">
+						<div class="translation__title">Great Desert Concert</div>
+						<div class="translation__about">
+							<div class="translation__date">Июль 21 - 2020</div>
+							<div class="translation__author">
+								<a class="translation__authortext" href="profile.html">Автор:</a>
+								<a class="translation__authorname" href="profile.html">Дмитрий Антохин</a>
+								<img class="translation__authorimg" src="img/translation/4.png"></img>
+							</div>
+						</div>
+
+						<div class="translation__rating">
+							<img class="translation__ratimg" src="img/translation/2.svg"></img>
+							<img class="translation__ratimg" src="img/translation/2.svg"></img>
+							<img class="translation__ratimg" src="img/translation/2.svg"></img>
+							<img class="translation__ratimg" src="img/translation/2.svg"></img>
+							<img class="translation__ratimg" src="img/translation/2.svg"></img>
+							<img class="translation__ratimg" src="img/translation/2.svg"></img>
+							<img class="translation__ratimg" src="img/translation/2.svg"></img>
+							<img class="translation__ratimg" src="img/translation/2.svg"></img>
+							<img class="translation__ratimg" src="img/translation/2.svg"></img>
+							<img class="translation__ratimg" src="img/translation/2.svg"></img>
+							<div class="translation__linegor"></div>
+							<div class="translation__rattext">9.8</div>
+							<img class="translation__ratsvg" src="img/translation/3.svg"></img>
+						</div>
+					</div>
+				</div>
+
+				<div class="translation__btns">
+					<div class="translation__buy">Купить билет</div>
+					<div class="translation__bought">
+						<img src="img/translation/8.svg" width="26px" height="26px">
+						<div class="translation__textbought">Билет куплен</div>
+					</div>
+					<div class="column__320">
+						<div class="translation__donate">Донат</div>
+						<div class="translation__sub">Подписаться</div>
+					</div>	
+				</div>
+
+				<img class="translation__video" src="img/translation/5.png"></img>
+
+				<div class="translation__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat quam laoreet donec elementum. Odio magna mauris eget vulputate id rhoncus. Nulla augue tellus suspendisse eu diam. Sagittis donec nibh urna, ac a. Turpis nulla enim elementum porttitor nec eget ultricies tempor. Sed blandit sit augue in ut gravida nulla venenatis imperdiet. Elementum a odio vestibulum vel. Facilisi ipsum ullamcorper nisl cum etiam euismod scelerisque amet. Condimentum porta lacus accumsan molestie turpis morbi tellus. Viverra et cras tortor quis eget vel molestie cras. Gravida in ut a vestibulum viverra sed. Interdum ac mi imperdiet viverra ac tincidunt at vestibulum placerat. Facilisi et eleifend cum elementum malesuada diam sed tellus. Placerat venenatis arcu accumsan, euismod fermentum nisi, turpis. A, eu egestas id nulla faucibus molestie. Tristique tellus bibendum ipsum eget. Bibendum mauris ultrices ultrices vestibulum scelerisque tincidunt condimentum lectus habitant. Donec egestas tellus viverra lectus nibh magna facilisi leo. Tellus et, tristique augue faucibus pharetra proin posuere. Justo enim, magna sed est magnis massa malesuada ut. Egestas molestie cursus vulputate praesent mi. In egestas ut at dui, in sit in scelerisque amet. Rutrum in enim lobortis commodo pulvinar eu a odio. Egestas morbi ultrices pretium in eleifend scelerisque pulvinar sodales maecenas.</div>
+			</div>
+			<div class="translation__chat chat">
+				<div class="chat__title">Чат</div>
+				<div class="chat__line"></div>
+				<div class="chat__chat">
+						<div class="chat__com">
+							<div class="chat__sentmes">
+								<img class="chat__img" src="img/translation/7.png"></img>
+								<div class="chat__name">Олег Петров:</div>
+								<div class="chat__open">Жду с нетерпением!</div>
+							</div>
+						</div>
+						<div class="chat__com">
+							<div class="chat__sentmes">
+								<img class="chat__img" src="img/translation/7.png"></img>
+								<div class="chat__name">Олег Петров:</div>
+								<div class="chat__open">Жду с нетерпением!</div>
+							</div>
+						</div>
+						<div class="chat__com">
+							<div class="chat__sentmes">
+								<img class="chat__img" src="img/translation/7.png"></img>
+								<div class="chat__name">Олег Петров:</div>
+								<div class="chat__open">Жду с нетерпением!</div>
+							</div>
+						</div>
+						<div class="chat__com">
+							<div class="chat__sentmes">
+								<img class="chat__img" src="img/translation/7.png"></img>
+								<div class="chat__name">Олег Петров:</div>
+								<div class="chat__open">Жду с нетерпением!</div>
+							</div>
+						</div>
+						<div class="chat__com">
+							<div class="chat__sentmes">
+								<img class="chat__img" src="img/translation/7.png"></img>
+								<div class="chat__name">Олег Петров:</div>
+								<div class="chat__open">Жду с нетерпением!</div>
+							</div>
+						</div>
+						<div class="chat__com">
+							<div class="chat__sentmes">
+								<img class="chat__img" src="img/translation/7.png"></img>
+								<div class="chat__name">Олег Петров:</div>
+								<div class="chat__open">Жду с нетерпением!</div>
+							</div>
+						</div>
+						<div class="chat__com">
+							<div class="chat__sentmes">
+								<img class="chat__img" src="img/translation/7.png"></img>
+								<div class="chat__name">Олег Петров:</div>
+								<div class="chat__open">Жду с нетерпением!</div>
+							</div>
+						</div>
+						<div class="chat__com">
+							<div class="chat__sentmes">
+								<img class="chat__img" src="img/translation/7.png"></img>
+								<div class="chat__name">Олег Петров:</div>
+								<div class="chat__open">Жду с нетерпением!</div>
+							</div>
+						</div>
+						<div class="chat__com">
+							<div class="chat__sentmes">
+								<img class="chat__img" src="img/translation/7.png"></img>
+								<div class="chat__name">Олег Петров:</div>
+								<div class="chat__open">Жду с нетерпением!</div>
+							</div>
+						</div>
+						<div class="chat__com">
+							<div class="chat__sentmes">
+								<img class="chat__img" src="img/translation/7.png"></img>
+								<div class="chat__name">Олег Петров:</div>
+								<div class="chat__open">Жду с нетерпением!</div>
+							</div>
+						</div>
+						<div class="chat__com">
+							<div class="chat__sentmes">
+								<img class="chat__img" src="img/translation/7.png"></img>
+								<div class="chat__name">Олег Петров:</div>
+								<div class="chat__open">Жду с нетерпением!</div>
+							</div>
+						</div>
+						<div class="chat__com">
+							<div class="chat__sentmes">
+								<img class="chat__img" src="img/translation/7.png"></img>
+								<div class="chat__name">Олег Петров:</div>
+								<div class="chat__open">Жду с нетерпением!</div>
+							</div>
+						</div>
+				</div>
+				<div class="chat__message">
+						<div class="chat__mes"><input class="menu__input" type="text" placeholder="Написать..."></div>
+						<div class="chat__sent">
+							<img src="img/translation/6.svg">
+						</div>
+					</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="js/script.js"></script>
+
+<!-- jQuery -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+
+</body>
+</html>
